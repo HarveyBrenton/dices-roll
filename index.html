@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets\style.css">
+    <title>Dices Roll</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Dices Roll</h1>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="game">
+                <!--DEMARRER LA GAME-->
+                <div class="btn-new-game">
+                    <img src="#"><span class="new-game"><button>NEW GAME</button></span>
+                </div>
+
+                <!--NOMBRE DE JOUEUR-->
+                <div class="players">
+                    <div class="player1">
+                        <h3>PLAYER 1</h3><span class="dot-position"><dot></dot></span>
+                    </div>
+                    <div class="player2">
+                        <h3>PLAYER 2</h3><span class="dot-position"><dot></dot></span>
+                    </div>
+                </div>
+
+                <!--SCORES + DICE-->
+                <div class="dice-score">
+                    <!--score player 1-->
+                    <div class="player1-dice-score">
+                        <div class="current-dice-score1">0</div>
+                    </div>
+
+                    <!--dice-->
+                    <div class="dice">
+                        <img src="#">
+                    </div>
+
+                    <!--score player 2-->
+                    <div class="player2-dice-score">
+                        <div class="current-dice-score2">0</div>
+                    </div>
+                </div>
+
+
+                <!--CURRENT SCORES + BTN ROLL & HOLD-->
+                <div class="current-score">
+                    <!--score player 1-->
+                    <div class="player1-current-score">
+                        <div class="current-score-text">
+                            <h4>CURRENT</h4>
+                        </div>
+                        <div class="current-score1">0</div>
+                    </div>
+
+                    <div class="roll-hold-display">
+                        <!--ROLL DICE-->
+                        <div class="roll-dice">
+                            <img src="#"><span class="roll-dice-text"><button>ROLL DICE</button></span>
+                        </div>
+
+                        <!--HOLD-->
+                        <div class="hold-score">
+                            <img src="#"><span class="hold-text"><button>HOLD</button></span>
+                        </div>
+                    </div>
+
+                    <!--score player 2-->
+                    <div class="player2-current-score">
+                        <div class="current-score-text">
+                            <h4>CURRENT</h4>
+                        </div>
+                        <div class="current-score2">0</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
