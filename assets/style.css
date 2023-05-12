@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+}
+
+.game-container {
+    padding: 3rem;
+    background: green;
+    margin: 3rem;
+}
+
+.game {
+    height: 50vh;
+    padding: 3rem;
+    text-align: center;
+    background-color: antiquewhite;
+}
