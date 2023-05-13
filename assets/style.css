@@ -105,6 +105,30 @@ header {
 }
 
 /*CURRENT SCORES + BTN ROLL & HOLD*/
+.player-current-score-0 {
+  background: red;
+  padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.player-current-score-1 {
+  background: red;
+  padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.current-round-score-0 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.current-round-score-1 {
+  color: white;
+  font-size: 1.8rem;
+}
+
 .current-scores { 
     display: flex;
     justify-content: space-between;
@@ -132,6 +156,15 @@ button:hover {
   padding: 2rem;
 }
 
+/*GLOBAL SCORE*/
+.global-score-0 {
+  color: red;
+  font-size: 3rem;
+}
 
+.global-score-1 {
+  color: red;
+  font-size: 3rem;
+}
 
 
