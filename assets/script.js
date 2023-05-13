@@ -4,6 +4,9 @@ let roundScore = 0;
 let activePlayer = 0;
 let gamePlaying = true;
 
+let dotPlayer1 = document.querySelector('.dot-0');
+let dotPlayer2 = document.querySelector('.dot-1');
+
 // Initialisation du jeu
 init();
 
@@ -22,9 +25,12 @@ function init() {
   document.querySelector('.player-1').classList.remove('victoire');
   document.querySelector('.player-0').classList.add('active');
   document.querySelector('.player-1').classList.remove('active');
+  dotPlayer1.classList.add('active');
+  dotPlayer2.classList.remove('active');
   document.querySelector('.btn-roll').disabled = false;
   document.querySelector('.btn-hold').disabled = false;
 }
+
 
 // Gestionnaire d'événement pour le bouton "Roll Dice"
 document.querySelector('.btn-roll').addEventListener('click', function() {
@@ -69,6 +75,9 @@ function nextPlayer() {
   document.querySelector('.player-0').classList.toggle('active');
   document.querySelector('.player-1').classList.toggle('active');
   activePlayer = (activePlayer === 0) ? 1 : 0;
+  dotPlayer1.classList.toggle('active');
+  dotPlayer2.classList.toggle('active');
+
 
   document.querySelector('.player-' + activePlayer).classList.remove('active');
 }
