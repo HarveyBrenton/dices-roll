@@ -2,15 +2,64 @@ header {
     text-align: center;
 }
 
+.rules {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
 .game-container {
-    padding: 3rem;
+    padding: 1.5rem;
     background: green;
-    margin: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.btn-new-game {
+  margin-bottom: 3rem; 
 }
 
 .game {
-    height: 50vh;
+
     padding: 3rem;
     text-align: center;
     background-color: antiquewhite;
 }
+
+
+/*NOMBRE DE JOUEUR + SCORE + DICE*/
+.players {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.dot {
+    background-color: red;
+}
+
+
+
+.dice {
+    width: 7rem;
+    height: 7rem;
+}
+
+
+
+/*CURRENT SCORES + BTN ROLL & HOLD*/
+.current-scores { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+
+
+
