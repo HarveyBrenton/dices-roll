@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
     <title>Dices Roll</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
             <div class="game">
                 <!--DEMARRER LA GAME-->
                 <div class="btn-new-game">
-                    <img src="#">
+                    <img src="assets\images\+.png" alt="new game" class="img-new-game">
                     <button class="btn-new">NEW GAME</button>
                 </div>
 
@@ -35,8 +37,8 @@
 
                     <!--player 1-->
                     <div class="player-0">
-                        <h3>PLAYER 1</h3>
-                        <span class="dot"></span>
+                        <h3>PLAYER 1 <span class="dot-0"></span></h3>
+                        
 
                         <!--Global score player 1-->
                         <div class="player-global-score-0">
@@ -52,15 +54,14 @@
                             <img src="assets/images/dice-5.png" class="dice" alt="lancé de dé">
                         </div>
                     </div>
-
                     <!--player 2-->
                     <div class="player-1">
-                        <h3>PLAYER 2</h3>
-                        <span class="dot"></span>
+                        <h3><span class="dot-1"></span>
+                            PLAYER 2</h3>
 
                         <!--Global score player 2-->
                         <div class="player-global-score-1">
-                            <div class="global-score-1">
+                            <div class="global-score-1">0
                             </div>
                         </div>
                     </div>
@@ -74,19 +75,19 @@
                         <div class="current-score-current-text">
                             <h4>CURRENT</h4>
                         </div>
-                        <div class="current-round-score-0"></div>
+                        <div class="current-round-score-0">0</div>
                     </div>
 
                     <div class="roll-hold-display">
                         <!--ROLL DICE-->
                         <div class="roll-dice">
-                            <img src="#">
+                            <img src="assets\images\cercle fleche.png" alt="roll dice" class="img-roll-dice">
                             <button class="btn-roll">ROLL DICE</button>
                         </div>
 
                         <!--HOLD-->
                         <div class="hold-score">
-                            <img src="#">
+                            <img src="assets\images\box fleche.png" alt="hold" class="img-hold">
                             <button class="btn-hold">HOLD</button>
                         </div>
                     </div>
@@ -106,6 +107,6 @@
     <footer>
 
     </footer>
-    <script src="script2.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
