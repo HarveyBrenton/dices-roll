@@ -1,3 +1,7 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 header {
     text-align: center;
 }
@@ -10,20 +14,30 @@ header {
 
 .game-container {
     padding: 1.5rem;
-    background: green;
     margin-left: 5rem;
     margin-right: 5rem;
+    background-image: radial-gradient(#ab8558, #a17a06);
 }
 
+.game {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: center;
+  background: linear-gradient(to right, #f9f9f9 50%, #fefefe 50%);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*DEMARRER LA GAME*/
 .btn-new-game {
   margin-bottom: 3rem; 
 }
 
-.game {
-
-    padding: 3rem;
-    text-align: center;
-    background-color: antiquewhite;
+.img-new-game {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: -0.2rem;
 }
 
 
@@ -36,8 +50,33 @@ header {
     margin-right: 15%;
 }
 
-.dot {
-    background-color: red;
+.dot-0.active {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: -0.1rem;
+}
+
+.dot-1.active {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: -0.1rem;
+}
+
+
+.img-rond-rouge-0 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.img-rond-rouge-1 {
+  width: 1rem;
+  height: 1rem;
 }
 
 
@@ -47,7 +86,23 @@ header {
     height: 7rem;
 }
 
+/*ROLL DICE*/
+.roll-dice {
+  margin-bottom: 1rem;
+}
 
+.img-roll-dice {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: -0.4rem;
+}
+
+/*HOLD*/
+.img-hold {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: -0.4rem;
+}
 
 /*CURRENT SCORES + BTN ROLL & HOLD*/
 .current-scores { 
@@ -58,7 +113,24 @@ header {
     margin-right: 15%;
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
+button:hover {
+  color: red;
+  font-weight: 700;
+}
+
+
+.victoire {
+  background-color: yellow;
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 2rem;
+}
 
 
 
