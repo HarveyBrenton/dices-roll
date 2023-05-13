@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets\style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <title>Dices Roll</title>
 </head>
 <body>
@@ -13,77 +13,92 @@
     </header>
 
     <main>
+        <p class="rules"><strong>Règles du jeu :</strong> Le jeu comprend 2 joueurs sur un seul et même écran.
+            Chaque joueur possède un score temporaire (CURRENT) et un score total sous (PLAYER).
+            À chaque tour, le joueur a son CURRENT initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. Le
+            résultat d’un lancer est ajouté au CURRENT.
+            Lors de son tour, le joueur peut décider à tout moment de :
+            - Cliquer sur l’option “Hold”, qui permet d’envoyer les points du CURRENT vers le score total. Ce sera alors le
+            tour de l’autre joueur.
+            - Lancer le dé : S’il obtient un 1, son score CURRENT est perdu et c’est la fin de son tour.
+            Le premier joueur qui atteint les 100 points au score total gagne le jeu.</p>
         <div class="game-container">
             <div class="game">
                 <!--DEMARRER LA GAME-->
                 <div class="btn-new-game">
-                    <img src="#"><span class="new-game"><button>NEW GAME</button></span>
+                    <img src="#">
+                    <button class="btn-new">NEW GAME</button>
                 </div>
 
-                <!--NOMBRE DE JOUEUR + SCORE-->
+                <!--NOMBRE DE JOUEUR + SCORE + DICE-->
                 <div class="players">
 
                     <!--player 1-->
-                    <div class="player1">
-                        <h3>PLAYER 1</h3><span class="dot-position"><dot></dot></span>
-                        <!--score player 1-->
-                        <div class="player1-round-score">
-                            <div class="current-round-score1">0                                
+                    <div class="player-0">
+                        <h3>PLAYER 1</h3>
+                        <span class="dot"></span>
+
+                        <!--Global score player 1-->
+                        <div class="player-global-score-0">
+                            <div class="global-score-0">                                
                             </div>
                         </div>
                     </div>
 
                     <!--DICE-->
-                    <div class="round-scores">
+                    <div class="current-round-scores">
                         <!--dice section-->
-                        <div class="dice">
-                        <img src="#">
+                        <div>
+                            <img src="assets/images/dice-5.png" class="dice" alt="lancé de dé">
                         </div>
                     </div>
 
                     <!--player 2-->
-                    <div class="player2">
-                        <h3>PLAYER 2</h3><span class="dot-position"><dot></dot></span>
-                        <!--score player 2-->
-                        <div class="player2-round-score">
-                            <div class="current-round-score2">0
+                    <div class="player-1">
+                        <h3>PLAYER 2</h3>
+                        <span class="dot"></span>
+
+                        <!--Global score player 2-->
+                        <div class="player-global-score-1">
+                            <div class="global-score-1">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!--GLOBAL SCORES + BTN ROLL & HOLD-->
-                <div class="global-scores">
+                <!--CURRENT SCORES + BTN ROLL & HOLD-->
+                <div class="current-scores">
+
                     <!--score player 1-->
-                    <div class="player1-global-score">
-                        <div class="global-score-text">
+                    <div class="player-current-score-0">
+                        <div class="current-score-current-text">
                             <h4>CURRENT</h4>
                         </div>
-                        <div class="global-score1">0</div>
+                        <div class="current-round-score-0"></div>
                     </div>
 
                     <div class="roll-hold-display">
                         <!--ROLL DICE-->
                         <div class="roll-dice">
-                            <img src="#"><span class="roll-dice-text"><button>ROLL DICE</button></span>
+                            <img src="#">
+                            <button class="btn-roll">ROLL DICE</button>
                         </div>
 
                         <!--HOLD-->
                         <div class="hold-score">
-                            <img src="#"><span class="hold-text"><button>HOLD</button></span>
+                            <img src="#">
+                            <button class="btn-hold">HOLD</button>
                         </div>
                     </div>
 
                     <!--score player 2-->
-                    <div class="player2-global-score">
-                        <div class="global-score-text">
+                    <div class="player-current-score-1">
+                        <div class="current-score-current-text">
                             <h4>CURRENT</h4>
                         </div>
-                        <div class="global-score2">0</div>
+                        <div class="current-round-score-1">0</div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </main>
@@ -91,6 +106,6 @@
     <footer>
 
     </footer>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
